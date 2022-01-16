@@ -411,6 +411,9 @@ footer p {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .more-btn {
+        padding: 0 20px;
+    }
     .subscribe {
         height: 170px;
         margin-bottom: 50px;
