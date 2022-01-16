@@ -369,7 +369,7 @@ footer p {
         flex-direction: column-reverse;
     }
     .banner-text {
-        width: 100%;
+        width: unset;
         padding-right: 10px;
         padding-bottom: 30px;
         padding-top: 30px;
@@ -434,6 +434,7 @@ footer p {
     }
     .subscribe-field {
         margin: auto;
+        width: 55%;
     }
     .subscribe-field input {
         background-color: transparent;
