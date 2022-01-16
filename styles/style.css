@@ -1,0 +1,450 @@
+/* ----------------------------
+    Fonts
+------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+/* ----------------------------
+    Theme Styles 
+------------------------*/
+:root {
+    --default-font-family: 'Poppins', sans-serif;
+    --default-price-text:  'Inter', sans-serif;
+    --default-font-color: #3A3A3A;
+    --default-btn-background: #E02C6D;
+    --default-ratings: orange;
+    --default-p-text: 16px;
+    --footer-bg: #0A0826;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* ----------------------------
+    Top Banner
+------------------------*/
+
+.top-banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.banner-text {
+    width: 70%;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.banner-text h1{
+    font-family: var(--default-font-family);
+    color: var(--default-font-color);
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+.banner-text p{
+    font-family: var(--default-font-family);
+    color: var(--default-font-color);
+    font-size: var(--default-p-text);
+    font-weight: 600;
+}
+.banner-img {
+    width: 40%;
+    background-image: url(../images/banner-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 340px;
+    background-position: center bottom;
+}
+.banner-img img {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--default-btn-background);
+    color: #ffffff;
+    font-family: var(--default-font-family);
+    font-size: var(--default-p-text);
+    cursor: pointer;
+}
+.btn i {
+    transition: .5s ease;
+}
+.btn:hover i {
+    padding-left: 5px;
+    transition: .5s ease;
+}
+/* ----------------------------
+    Horizontal Row
+------------------------*/
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(192, 204, 218, 0.75), rgba(0, 0, 0, 0));
+}
+/* ----------------------------
+    Logo Section
+------------------------*/
+.logos {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* ----------------------------
+    Product Section
+------------------------*/
+.product-box {
+    margin-top: 100px;
+}
+.category-title {
+    font-size: 28px;
+    font-family: var(--default-font-family);
+    color: var(--default-font-color);
+    font-weight: 600;
+    text-align: center;
+}
+.p-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    padding: 30px 60px;
+}
+.product {
+    width: 250px;
+    height: 380px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.product:hover .product-img > img {
+    transform: scale(1.1);
+}
+.product-img{
+    height: 213px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.product-img img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+}
+.product-titles h4{
+    font-family: var(--default-font-family);
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 20px;
+    font-family: var(--default-price-text);
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+.ratings i {
+    font-size: 10px;
+    color: var(--default-ratings);
+}
+.product-text p {
+    font-family: var(--default-price-text);
+    font-weight: 700;
+    font-size: 12px;
+    color: #787885;
+    margin-top: 5px;
+}
+.more-btn {
+    padding: 0px 90px;
+}
+.more-btn p {
+    text-align: right;
+}
+.more-btn p a {
+    text-decoration: none;
+    font-family: var(--default-font-family);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--default-btn-background);
+}
+.more-btn p a span {
+    transition: .5s ease-out;
+}
+.more-btn p a:hover span {
+    padding-left: 5px;
+    transition: .5s ease-out;
+}
+
+/* ----------------------------
+    Subscribe Section
+------------------------*/
+.subscribe {
+    background-image: url(../images/subscribe-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    margin-bottom: 100px;
+    padding: 40px 60px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.subscribe-content {
+    height: 220px;
+    width: 550px;
+}
+.subscribe-content h2{
+    font-family: var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+}
+.subscribe-content h2 span {
+    font-size: 25px;
+    font-weight: 500;
+}
+.subscribe-field {
+    position: relative;
+    width: 60%;
+    margin-top: 35px;
+}
+.subscribe-field input {
+    background-color: transparent;
+    padding: 10px 20px;
+    padding-right: 80px;
+    border: 1px solid #a9a9a9;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: var(--default-font-family);
+    color: var(--default-font-color);
+    font-weight: 500;
+}
+.subscribe-field input:focus {
+    outline: 1px solid var(--default-btn-background);
+}
+.subscribe-field i{
+    position: absolute;
+    right: 55px;
+    top: 15px;
+    color: var(--default-btn-background);
+    cursor: pointer;
+}
+
+/* ----------------------------
+    Footer Section
+------------------------*/
+footer {
+    background-color: var(--footer-bg);
+    padding: 20px;
+}
+footer h6 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+footer p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+.social-media {
+    text-align: center;
+    padding: 25px 0;
+}
+.social-media span {
+    background: rgb(122 122 122 / 25%);
+    padding: 8px 10px;
+    border-radius: 100%;
+    margin: 0 1px;
+    cursor: pointer;
+    transition: .5s;
+}
+.social-media span:hover {
+    background: #ffffff;
+    transition: .5s;
+}
+.social-media span:nth-child(3) {
+    padding: 8px 12px;
+}
+.social-media span:nth-child(5) {
+    padding: 8px 9px;
+}
+.social-media span i {
+    color: #ffffff;
+    font-size: 16px;
+    transition: .5s;
+}
+.social-media span:hover i {
+    color: var(--footer-bg);
+    transition: .5s;
+}
+
+/* Tablet devices (768px) */
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    .banner-text {
+        width: 60%;
+        padding-right: 55px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 13px;
+    }
+    .banner-img {
+        width: 40%;
+        background-size: contain;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .logos {
+        padding: 15px 10px;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .product-box {
+        margin-top: 50px;
+    }
+    .p-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .subscribe {
+        height: 165px;
+        margin-bottom: 40px;
+        padding: 40px 30px;
+        border-radius: 0;
+        margin-top: 40px;
+    }
+    .subscribe-content h2 {
+        font-size: 24px;
+    }
+    .subscribe-content h2 span {
+        font-size: 15px;
+    }
+    .subscribe-field {
+        margin-top: 15px;
+    }
+    .subscribe-field input {
+        padding: 6px 20px;
+        padding-right: 50px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    .subscribe-field i {
+        top: 10px;
+        right: 125px;
+    }
+}
+
+
+/* Mobile devices (480px) */
+@media only screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+    .top-banner {
+        flex-direction: column-reverse;
+    }
+    .banner-text {
+        width: 100%;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .banner-img {
+        width: 50%;
+        background-size: contain;
+    }
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        padding: 0px 25px;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .product-box {
+        margin-top: 40px;
+    }
+    .p-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .subscribe {
+        height: 170px;
+        margin-bottom: 50px;
+        padding: 15px 10px;
+        border-radius: 0px;
+        margin-top: 50px;
+    }
+    .subscribe-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .subscribe-content h2 {
+        font-size: 22px;
+    }
+    .subscribe-content h2 span {
+        font-size: 16px;
+    }
+    .subscribe-field {
+        margin: auto;
+    }
+    .subscribe-field input {
+        background-color: transparent;
+        padding: 7px 15px;
+        padding-right: 60px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    .subscribe-field i {
+        right: 25px;
+        top: 12px;
+    }
+    .social-media span {
+        padding: 5px 8px;
+    }
+    .social-media span:nth-child(3) {
+        padding: 5px 10px;
+    }
+    .social-media span:nth-child(5) {
+        padding: 5px 7px;
+    }
+    .social-media span i {
+        font-size: 13px;
+    }
+}
